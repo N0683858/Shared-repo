@@ -1,3 +1,7 @@
+html{
+  width: 100%;
+}
+
 body{
 	background: url(https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?cs=srgb&dl=abs-adult-athlete-1229356.jpg&fm=jpg);
 	background-size: cover;
@@ -45,6 +49,25 @@ h1{
 	border-width: 2px;
 	padding: 10px;
 }
+
+@media only screen and (max-width: 992px){
+  #homeLink{
+    border-width: 0;
+    padding: 0;
+  }
+}
+
+  @media only screen and (max-width: 768px){
+    .content{
+      padding-top: 40%;
+    }
+  }
+
+    @media only screen and (max-width: 424px){
+      .content{
+        padding-top: 50%;
+      }
+    }
 
 
 /* -------------------------------------------------------------------------------------- */

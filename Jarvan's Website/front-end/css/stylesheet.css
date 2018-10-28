@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+html{
+  width: 100%;
+}
+
+body{
+/*	background-image: url(https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?cs=srgb&dl=abs-adult-athlete-1229356.jpg&fm=jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;*/
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/*                                          NAVBAR                                        */
+/* -------------------------------------------------------------------------------------- */
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #FFD700;
+}
+
+.navbar .navbar-brand{
+	font-size: 2em;
+	color: #FFD700;
+  	font-family: 'Crimson Text', serif;
+}
+
+.navbar .navbar-nav a{
+	margin-left: 10%;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #FFD700;
+}
+
+.bg-dark-custom{
+	background-color: #1c1c1c;
+}
+
+@media only screen and (max-width: 992px){
+  /*#homeLink{
+    border-width: 0;
+    padding: 0;
+  }*/
+}
+
+  @media only screen and (max-width: 768px){
+   /* .content{
+      padding-top: 40%;
+    }*/
+  }
+
+    @media only screen and (max-width: 424px){
+      /*.content{
+        padding-top: 50%;
+      }*/
+    }
+
+/* -------------------------------------------------------------------------------------- */
+/*                                          CONTENT                                       */
+/* -------------------------------------------------------------------------------------- */
+
+
+.content{
+	padding-top: 100px;
+}
+
+/*hr{
+	border-color: white;
+	width: 400px;
+}*/
+
+/*h1{
+	color: #FFD700;
+}*/
+
+.container .content .jumbotron{
+	/*background: rgba(204, 204, 204, 0.4);*/
+	padding-top: 2em;
+}
+
+
+.card .card-image{
+	background-position: center;
+	background-size: cover;
+}
+/* -------------------------------------------------------------------------------------- */
+/*                                          FOOTER                                        */
+/* -------------------------------------------------------------------------------------- */
+
+footer{
+  background-color: #1c1c1c;
+}

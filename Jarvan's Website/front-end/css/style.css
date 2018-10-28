@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+
 html{
   width: 100%;
 }
@@ -6,46 +10,35 @@ body{
 	background: url(https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?cs=srgb&dl=abs-adult-athlete-1229356.jpg&fm=jpg);
 	background-size: cover;
 	background-position: center;
-	color: white;
-}
-
-.content{
-	text-align: center;
-	padding-top: 25%;
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-				 0px 8px 13px rgba(0,0,0,0.1),
-				 0px 18px 23px rgba(0,0,0,0.1);
-}
-
-hr{
-	border-color: white;
-	width: 400px;
-}
-
-h1{
-	font-weight: 700;
-	font-size: 5em;
+	/*color: #FFD700;*/
+  color: white;
 }
 
 /* -------------------------------------------------------------------------------------- */
 /*                                          NAVBAR                                        */
 /* -------------------------------------------------------------------------------------- */
 
-.navbar a{
-	color:white;
-}
+/*.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #FFD700;
+}*/
 
 .navbar .navbar-brand{
-	font-size: 2em;
+	font-size: 3em;
+  /*color: #FFD700;*/
+  font-family: 'Crimson Text', serif;
 }
 
 .navbar .navbar-nav a{
 	margin-left: 10%;
 }
 
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #FFD700;
+}
+
 #homeLink{
 	border-style: solid;
-	border-color: white;
+	border-color: #FFD700;
 	border-width: 2px;
 	padding: 10px;
 }
@@ -111,3 +104,32 @@ h1{
   /* Adds the blur filter to the element which sits above the main elements background image */
   filter: blur(5px);
 }
+
+
+/* -------------------------------------------------------------------------------------- */
+/*                                          CONTENT                                       */
+/* -------------------------------------------------------------------------------------- */
+.content{
+  text-align: center;
+  padding-top: 25%;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+         0px 8px 13px rgba(0,0,0,0.1),
+         0px 18px 23px rgba(0,0,0,0.1);
+}
+
+hr{
+  border-color: white;
+  width: 580px;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 5em;
+  font-family: 'Crimson Text', serif;
+}
+
+
+.btn-warning{
+  color: white;
+}
+

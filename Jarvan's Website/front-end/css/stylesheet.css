@@ -22,7 +22,7 @@ body{
 }
 
 .navbar .navbar-brand{
-	font-size: 2em;
+	font-size: 2.5em;
 	color: #FFD700;
   	font-family: 'Crimson Text', serif;
 }
@@ -78,18 +78,30 @@ body{
 
 .container .content .jumbotron{
 	/*background: rgba(204, 204, 204, 0.4);*/
-	padding-top: 2em;
+	/*padding-top: 2em;*/
 }
 
-
-.card .card-image{
-	background-position: center;
-	background-size: cover;
+.card .py-5 .h1{
+	font-family: 'Crimson Text', serif;
+	font-size: 3.5em;
+	color: black;
 }
 /* -------------------------------------------------------------------------------------- */
 /*                                          FOOTER                                        */
 /* -------------------------------------------------------------------------------------- */
 
 footer{
-  background-color: #1c1c1c;
+  	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer.page-footer .footer-copyright{
+	background-color: #1e1e1e;
+}
+
+
+.unique-color-dark {
+	background-color: #232323!important;
 }

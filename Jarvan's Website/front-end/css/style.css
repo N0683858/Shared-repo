@@ -45,6 +45,10 @@ body{
 	padding: 10px;
 }
 
+#gold{
+  color: #FFD700;
+}
+
 @media only screen and (max-width: 992px){
   #homeLink{
     border-width: 0;
@@ -126,7 +130,7 @@ hr{
 
 h1{
   font-weight: 700;
-  font-size: 5em;
+  font-size: 4em;
   /*font-family: 'Crimson Text', serif;*/
   font-family: 'Archivo Black', sans-serif;
 }

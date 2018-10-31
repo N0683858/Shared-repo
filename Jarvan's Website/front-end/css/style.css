@@ -108,7 +108,7 @@ body{
   box-shadow: inset 0 0 0 100% rgba(255,255,255,0.2);
 
   /* Adds the blur filter to the element which sits above the main elements background image */
-  filter: blur(2px);
+  filter: blur(3px);
 }
 
 

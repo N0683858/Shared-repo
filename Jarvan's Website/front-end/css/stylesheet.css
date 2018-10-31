@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
 html{
   width: 100%;
@@ -23,8 +24,8 @@ body{
 
 .navbar .navbar-brand{
 	font-size: 2.5em;
-	color: #FFD700;
-  	font-family: 'Crimson Text', serif;
+	/*color: #FFD700;*/
+  	font-family: 'Archivo Black', sans-serif;
 }
 
 .navbar .navbar-nav a{
@@ -37,6 +38,10 @@ body{
 
 .bg-dark-custom{
 	background-color: #1c1c1c;
+}
+
+.gold{
+  color: #FFD700;
 }
 
 @media only screen and (max-width: 992px){
@@ -62,11 +67,6 @@ body{
 /*                                          CONTENT                                       */
 /* -------------------------------------------------------------------------------------- */
 
-
-.content{
-	padding-top: 100px;
-}
-
 /*hr{
 	border-color: white;
 	width: 400px;
@@ -76,25 +76,28 @@ body{
 	color: #FFD700;
 }*/
 
-.container .content .jumbotron{
+.container .content .jumbotron.jumbotron-custom{
 	/*background: rgba(204, 204, 204, 0.4);*/
-	/*padding-top: 2em;*/
+	padding-top: 7em;
 }
 
 .card .py-5 .h1{
-	font-family: 'Crimson Text', serif;
+	font-family: 'Archivo Black', sans-serif;
 	font-size: 3.5em;
 	color: black;
 }
+
+
 /* -------------------------------------------------------------------------------------- */
 /*                                          FOOTER                                        */
 /* -------------------------------------------------------------------------------------- */
 
-footer{
-  	position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+footer {
+    clear: both; /*prevents floating elements from right/left of footer*/
+    position: relative; /*Positions footer relative to other elements on hte page*/
+    z-index: 1; /*z-index positions elements in front or behind eachother, most have a //natual z-index of -1*/
+    height: -3em; /*exactly what it says...*/
+    margin-top: 5em; /*moves footer to bottom of all elements*/
 }
 
 footer.page-footer .footer-copyright{

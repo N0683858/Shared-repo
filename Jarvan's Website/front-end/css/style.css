@@ -30,9 +30,9 @@ body{
   font-family: 'Archivo Black', sans-serif;
 }
 
-.navbar .navbar-nav a{
+/*.navbar .navbar-nav a{
 	margin-left: 10%;
-}
+}*/
 
 .navbar-dark .navbar-nav .nav-link:hover{
   color: #FFD700;

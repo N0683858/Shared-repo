@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
 html{
   width: 100%;
 }
@@ -76,15 +83,32 @@ body{
 	color: #FFD700;
 }*/
 
+#wrapper {
+  min-height: 75%;
+  position: relative;
+}
+
 .container .content .jumbotron.jumbotron-custom{
 	/*background: rgba(204, 204, 204, 0.4);*/
 	padding-top: 7em;
+  background: transparent;
+  color: white;
 }
 
 .card .py-5 .h1{
 	font-family: 'Archivo Black', sans-serif;
 	font-size: 3.5em;
 	color: black;
+}
+
+#background_img{
+  background: url(../../images/GOLD.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#aboutUs{
+  font-size: 1.1em;
 }
 
 

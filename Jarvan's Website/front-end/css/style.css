@@ -8,7 +8,7 @@ html{
 }
 
 body{
-	background: url(https://images.pexels.com/photos/163351/girl-boxer-ring-boxing-pear-163351.jpeg?cs=srgb&dl=boxing-dark-fitness-163351.jpg&fm=jpg);
+	background: url(../../images/man-women.jpeg);
 	background-size: cover;
 	background-position: center;
 	/*color: #FFD700;*/
@@ -108,7 +108,7 @@ body{
   box-shadow: inset 0 0 0 100% rgba(255,255,255,0.2);
 
   /* Adds the blur filter to the element which sits above the main elements background image */
-  filter: blur(3px);
+  filter: blur(4px);
 }
 
 

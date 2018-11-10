@@ -89,10 +89,13 @@ body{
 }
 
 .container .content .jumbotron.jumbotron-custom{
-	/*background: rgba(204, 204, 204, 0.4);*/
 	padding-top: 7em;
   background: transparent;
   color: white;
+}
+
+#contact-jumbotron{
+  padding-top: 9em;
 }
 
 .card .py-5 .h1{
@@ -109,6 +112,24 @@ body{
 
 #aboutUs{
   font-size: 1.1em;
+/*  background: rgba(204, 204, 204, 0.7);*/
+  color: #000000;
+}
+
+#about-bkgrnd{
+  background: url(http://img.alicdn.com/imgextra/i4/3011789987/TB2nZMJXfkmyKJjSZFmXXX1EFXa_!!3011789987-0-daren.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-bkgrnd{
+  background: url(https://cdn.shopify.com/s/files/1/0051/5303/0262/articles/Strength_Training_Benefits_2048x.jpeg?v=1535672363);
+  background-size: cover;
+  background-position: center;
+}
+
+.transparent{
+  background: rgba(204, 204, 204, 0.7);
 }
 
 

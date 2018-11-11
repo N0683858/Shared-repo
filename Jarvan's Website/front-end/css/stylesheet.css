@@ -88,7 +88,7 @@ body{
   position: relative;
 }
 
-.container .content .jumbotron.jumbotron-custom{
+.container .content .jumbotron.jumbotron-custom{ /*signup page*/
 	padding-top: 7em;
   background: transparent;
   color: white;
@@ -104,8 +104,8 @@ body{
 	color: black;
 }
 
-#background_img{
-  background: url(../../images/GOLD.jpg);
+#background_img{ /*signup page*/
+  background: url(../../images/GOLD.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -117,20 +117,24 @@ body{
 }
 
 #about-bkgrnd{
-  background: url(http://img.alicdn.com/imgextra/i4/3011789987/TB2nZMJXfkmyKJjSZFmXXX1EFXa_!!3011789987-0-daren.jpg);
+  background: url(http://img.alicdn.com/imgextra/i4/3011789987/TB2nZMJXfkmyKJjSZFmXXX1EFXa_!!3011789987-0-daren.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center;
 }
 
 #contact-bkgrnd{
   /*background: url(http://img1.juimg.com/161215/330642-1612150FR650.jpg);*/
-  background: url(http://watchfit.com/wp-content/uploads/2016/09/46649826_l.jpg);
+  background: url(http://watchfit.com/wp-content/uploads/2016/09/46649826_l.jpg) no-repeat center center fixed; /*makes image center and fixed at the same place without repeating*/
+  -webkit-background-size: cover; /*styling for diff browers e.g.mozila,opera etc.*/
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center;
 }
 
 .transparent{
-  background: rgba(204, 204, 204, 0.7);
+  background: rgba(204, 204, 204, 0.8);
 }
 
 

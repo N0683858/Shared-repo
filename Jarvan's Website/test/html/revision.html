@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Physics Simulator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/web-fonts-with-css/css/fontawesome-all.min.css">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#242628">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="../index.html" id="SiteName">MOTION</a>
+
+    <!-- button to toggle collapsed navabar when screen is too small -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- contains list -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto" id="Links">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link" href="userguide.html">User Guide</a>
+        </li>
+          <a class="nav-link">Download</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="revision.html">Revision</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- /Links End -->
+  </nav>
+  <!-- /Navigation Bar End -->
+
+  <div class="wrapper">
+  <!-- Content Area -->
+  <section class="content">
+    <div class="container">
+      <div class="jumbotron" id="Jumbot">
+        <h1>REVISION</h1>
+        <br>
+        <br>
+        <h3>THEORY</h3>
+        <br>
+        <p> <img src="../css/img/Diagram1.png" alt="Mechanics Diagram 1" align="right" height="450vh" width="600vw"> When a ball rolls down a slope there are forces that act on that ball, these are combined to create the resultant force which is what makes the ball move. These forces include the gravitational force being the weight of the ball which is mass*gravity, this force pushes the ball vertically downwards. Another force is the normal acting perpendicular to the angle of the slope, this force can be explained by Newton’s Third Law in which every action (force, the ball on the slope) has an equal and opposite reaction (the normal force). To work out the downhill net force of the ball in the x-direction the formula is as shown:</p>
+        <p>F<sub>(net-x)</sub> = mgsin⁡(∅) = ma<sub>x</sub></p>
+        <p>In which m is the mass and a is the acceleration of the object. The formula for working out the acceleration is a<sub>x</sub> = gsin⁡(∅), this equation can be used to find out the time it took for the ball to go down the slope and the final velocity of the ball. With our simulation the input values are the angle of the slope and the mass of the ball so with these values the net force and acceleration can easily be calculated by inputting the values into the equations above. The length of the adjacent side to the angle will be known as it will never change.</p>
+        <p>To work out the time and velocity the SUVAT equations will need to be used. For velocity the following equation can be used v<sup>2</sup> = u<sup>2</sup> + 2as however you will need to square root the answer to get the right value of the final velocity.  Looking at this equation we have a, which is the acceleration and the initial velocity (u) equals 0 so to work out t(time) we first need to find s(displacement). This equation can be shortened down to v<sup>2</sup> = 2as because u<sup>2</sup> = 0. To work out the displacement you simply use trigonometry, the known side is adjacent and the wanted side is the opposite therefore using SOH CAH TOA we know that we will be using tan⁡(). Thus, the equation we will be using to work out the displacement will be s = tan⁡(∅)×adj. Now the final velocity can be worked out using all the equations above.</p>
+        <p>Finally, to work out the time that it takes the ball to roll down the slope we can use any of the following SUVAT equation:</p>
+        <p align="middle">a=(v-u)/t <br> v=u+at <br> s=1⁄2(u+v)t</p>
+        <p>These equations will need to be rearranged so that t is the subject and nothing else need to be worked out as we already have all the values needed in these equations. Just insert the values and that is how you work out the time.</p>
+        <br>
+        <h3>PRACTICE QUESTION</h3>
+        <br>
+        <img src="../css/img/Diagram2.png" alt="Mechanics Diagram 1" align="right" height="400vh" width="600vw">
+        <p><b>Q: Find the net Force to 2 decimal places.</b></p>
+        <p>F<sub>(net-x)</sub> = mgsin⁡(∅) = ma<sub>x</sub></p>
+        <p>Mass = 50, Theta = 35, Gravity = 9.8</p>
+        <p>35 × 9.8 × sin⁡(35) = 343 × sin⁡(35) = 196.736</p>
+        <p>Rounded to 2 decimal places the answer is <b>196.74N</b></p>
+        <br>
+        <p><b>Q: Find the final velocity.</b></p>
+        <p>v<sup>2</sup>=u<sup>2</sup>+2as</p>
+        <p>u=0</p>
+        <p>a<sub>x</sub> = gsin⁡(∅) -> a = 9.8sin⁡(35) = 5.62ms<sup>-2</sup></p>
+        <p>s = tan⁡(∅) × adj -> s = tan⁡(35) × 20 = 14m</p>
+        <p>v<sup>2</sup> = 2 × 5.62 × 14 = 157.36</p>
+        <p>√157.36 = 12.54 </p>
+        <p>v = <b>12.54ms<sup>-1</sup></b></p>
+        <br>
+        <p><b>Q: Find t.</b></p>
+        <p>a = (v-u)/t</p>
+        <p>Rearrange to solve for t.</p>
+        <p>t = (v-u)/a</p>
+        <p>a = 5.62ms<sup>2</sup>, u = 0, v = 12.54</p>
+        <p>t = 12.54⁄5.62 = <b>2.23s</b> </p>
+      </div>
+    </div>
+  </section>
+  <!-- /Content Area Finish -->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small stylish-color-dark">
+      <!--Copyright-->
+      <div class="container">
+      <div class="jumbotron" id="Jumbot">
+      <div class="footer-copyright text-center">
+        <a class="navbar-brand" href="../index.html" id="SiteName">MOTION</a>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x" style="color:#3b5998"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter-square fa-2x" style="color:#00aced"></i><a>
+          <a href="https://plus.google.com"><i class="fab fa-google-plus-square fa-2x" style="color:#dd4b39"></i><a>
+          <a href="https://www.pinterest.co.uk/"><i class="fab fa-pinterest-square fa-2x" style="color:#cb2027"></i><a>
+          <a href="https://uk.linkedin.com/"><i class="fab fa-linkedin fa-2x" style="color:#007bb6"></i><a>
+        <hr>
+         <p id="copyright">Copyright © 2018 Physics Simulator. &nbsp; All Rights Reserved.
+          <a href="index.html"> Motion.com </a> </p>
+      </div>
+    </div>
+  </div>
+      <!--/.Copyright-->
+  </footer>
+  <!-- Footer -->
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,350 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/*                                   BACKGROUND IMAGE                                     */
+/* -------------------------------------------------------------------------------------- */
+
+main{
+  /* Dynamically sets main to cover entire screen width and height  */
+  height: 100vh;
+  width: 100vw;
+
+  /*Sets background image */
+  background: url("img/background.png") fixed no-repeat;
+  /* SOURCE: https://www.videoblocks.com/video/abstract-simple-black-and-white-low-poly-waving-3d-surface-as-cyber-background-grey-geometric-
+  vibrating-environment-or-pulsating-background-in-cartoon-low-poly-popular-stylish-3d-design-rreok4xybbj39myjlt */
+
+  /* Background image does not scroll with screen, it is fixed */
+  background-attachment: fixed;
+
+  /* Background image covers entire element box */
+  background-size: cover;
+
+  /* Background image does not repeat if screen is bigger than the image */
+  background-repeat:no-repeat;
+
+  /* Centres background image */
+  background-position: center center;
+
+  /* Sets background colour to be displayed if image does not load */
+  background-color: #F4F7F5;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/*                                          BLUR                                          */
+/* -------------------------------------------------------------------------------------- */
+
+/* Sets the div element with id "blur" to dynamically fill the entire screen */
+#blur{
+
+  /* Dynamically sets width and height */
+  width: 100vw;
+  height: 100vh;
+
+  /* Background of element mimics the background of the main element */
+  background: inherit;
+
+  /* Position is set relative to the main container */
+  position: absolute;
+
+  /* Any content which overflows the element box is hidden */
+  overflow: hidden;
+}
+
+/* Adds a blur filter and shadow to the div element box with id "blur", inserting it before the content */
+#blur:before{
+
+  /* Dynamically sets width and height */
+  width: 100%;
+  height: 100%;
+
+  /* Sets content to nothing */
+  content: "";
+
+  /* Position is set relative to the main element box */
+  position: absolute;
+
+  /* Background of element mimics the background of the main element */
+  background: inherit;
+
+  /* Adds a shadow to the element which sits above the main elements background image and makes it darker */
+  box-shadow: inset 0 0 0 100% rgba(255,255,255,0.2);
+
+  /* Adds the blur filter to the element which sits above the main elements background image */
+  filter: blur(8px);
+}
+
+/* -------------------------------------------------------------------------------------- */
+/*                                     NAVIGATION BAR                                     */
+/* -------------------------------------------------------------------------------------- */
+
+nav{
+
+  /* Sets position relative to the position of the "blur" element box */
+  position: absolute;
+  
+  /* Sets size of the width of the element box */
+  width: 80%;
+
+  /* Centers the list */
+  transform: translate(6%,0%);
+
+}
+
+/* Styles element box of the entire list */
+nav ul{
+
+  /* Removes bullet points from list */
+  list-style-type: none;
+
+  /* Any content which overflows the list is hidden */
+  overflow: hidden;
+
+  /* Aligns the text and sets font colour to white */
+  text-align: center;
+  color: #000000;
+}
+
+/* Styles each individual list element */
+nav li{
+
+  /* Sets size of the width of the element box */
+  width: 15%;
+
+  /* Creates a gap between each list element */
+  margin-left: 6%;
+
+  /* Increases the size of each list element */
+  padding: 2%;
+
+  /* Makes the list horizontal */
+  float: left;
+
+}
+
+/* Styles all hyperlink tags */
+nav a{
+
+  /* Removes hyperlink underline */
+  text-decoration: none !important;
+
+  /* Sets the font colour to black */
+  color: rgba(0,0,0, 1);
+}
+
+/* Styles all hyperlink tags when hovered over */
+nav a:hover{
+
+  /* Sets the background colour of the list element to pink */
+  color: #FF206E;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/*                                        TITLE                                           */
+/* -------------------------------------------------------------------------------------- */
+
+#title{
+
+  /* Sets position relative to the position of the "blur" element box */
+  position: absolute;
+
+  /* Sets position of element box to centre */
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-30%);
+
+  /* Sets font size and thickness */
+  font-size: 700%;
+  font-weight: 500;
+}
+
+#title_one{
+
+  /* Sets a buffer between text and ball animation */
+  margin-right: 10px;
+
+  /* Makes title divs all be on one line */
+  float:left;
+}
+
+#title_two{
+
+  /* Makes title divs all be on one line */
+  float:left;
+}
+
+#title_three{
+
+  /* Sets a buffer between text and ball animation */
+  margin-left: 20px;
+
+  /* Makes title divs all be on one line */
+  float:left;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/*                                     BALL ANIMATION                                     */
+/* -------------------------------------------------------------------------------------- */
+/*SOURCE:https://codeburst.io/tutorial-make-a-bouncing-ball-entirely-with-css-1e7e3c853a50*/
+
+
+.ball { 
+
+  /* Sets width and height of div */
+  width: 100px;
+  height: 100px;
+
+  /* Makes div a ball */
+  border-radius: 50%;
+
+  /* Sets color to pink */
+  background-color: #FF206E;
+
+}
+
+/* Runs animation if screen size is big enough */
+@media only screen and (min-width: 750px){
+
+.ball {
+
+  /* Sets animation type to bounce and time for completion */
+  animation: bounce 0.5s;
+
+  /* Alternates the direction of the bounce */
+  animation-direction: alternate;
+
+  /* Sets a transition effect from start to end */
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+
+  /* Makes animation continue forever */
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes bounce {
+    
+  /* Used to set how far the ball will travel */
+  from { transform: translate3d(0, 6vh, 0); }
+  to   { transform: translate3d(0, 16vh, 0); } 
+    
+}
+
+}
+
+/* -------------------------------------------------------------------------------------- */
+/*                                  RESPONSIVE DESIGN                                     */
+/* -------------------------------------------------------------------------------------- */
+/* The below media queries are used to resize the navbar title and ball to the homepage   */
+/* still looks good on smaller screens.                                                   */
+
+/* Resizes if screen is lower than specified width */
+@media only screen and (max-width: 1200px){
+
+  .ball{
+
+    width: 80px;
+    height: 80px;
+
+  }
+
+  #title{
+
+    font-size: 600%;
+
+  }
+
+}
+
+@media only screen and (max-width: 1000px){
+
+  .ball{
+
+    width: 60px;
+    height: 60px;
+
+  }
+
+  #title{
+
+    font-size: 500%;
+
+  }
+
+}
+
+@media only screen and (max-width: 800px){
+
+  .ball{
+
+    width: 50px;
+    height: 50px;
+
+  }
+
+  #title{
+
+    font-size: 400%;
+
+  }
+
+}
+
+@media only screen and (max-width: 650px){
+
+  .ball{
+
+    width: 30px;
+    height: 30px;
+
+
+  }
+
+  #title{
+
+    font-size: 250%;
+
+  }
+
+  /* Styles all hyperlink tags */
+  nav a{
+
+    font-size: 80%;
+    
+  }
+
+
+}
+
+@media only screen and (max-width: 450px){
+
+  .ball{
+
+    width: 25px;
+    height: 25px;
+
+  }
+
+  #title{
+
+    font-size: 150%;
+
+  }
+
+  /* Styles all hyperlink tags */
+  nav a{
+
+    font-size: 20%;
+    
+  }
+
+  /* Styles element box of the entire list */
+  nav ul{
+
+    padding-left: 0%
+  }
+
+}

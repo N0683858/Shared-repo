@@ -1,0 +1,112 @@
+/*Navbar*/
+ul{
+	font-size: 18px
+}
+
+a:hover{
+	color: #FF206E !important;
+}
+
+.navbar-default {
+  	background: none;
+}
+
+#SiteName{
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+#Links{
+	margin-right: 30px;
+}
+
+/* BODY */
+body{
+
+	/* making the background picture a bit transparent */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+
+	/*Sets background image */
+	background: url("img/background.png") fixed no-repeat;
+	/* SOURCE: https://www.videoblocks.com/video/abstract-simple-black-and-white-low-poly-waving-3d-surface-as-cyber-background-grey-geometric-
+	vibrating-environment-or-pulsating-background-in-cartoon-low-poly-popular-stylish-3d-design-rreok4xybbj39myjlt */
+
+	/* Background image does not scroll with screen, it is fixed */
+	background-attachment: fixed;
+
+	/* Background image covers entire element box */
+	background-size: cover;
+
+	/* Background image does not repeat if screen is bigger than the image */
+	background-repeat:no-repeat;
+
+	/* Centres background image */
+	background-position: center center;
+
+	/* Sets background colour to be displayed if image does not load */
+	background-color: #F4F7F5;
+
+}
+
+.content{
+	margin-top: 80px; /* adding enough space at the top of the content so that it's underneath the NavBar and not being covered by it*/
+}
+
+.wrapper{
+	width: 93%;
+	margin: auto; /* automatically sets the margin depending on the screen size*/
+	overflow: hidden; /*want to hide the content if it overflows (if box not big enough to display everything)*/
+}
+
+.container{
+	margin: 30px;
+  	opacity: 0.9;
+  	filter: alpha(opacity=90)
+}
+
+#Jumbot{
+	padding: 30px;
+}
+
+footer{
+	/* Font colour */
+	color: #000000;
+	padding: 0;
+}
+
+h1{
+	color: #FF206E !important;
+}
+
+h3{
+	color: #FF206E !important;
+}
+
+button {
+	background-color: #FF206E !important;
+	border: 0 !important;
+}
+
+/* Hides images if screen is too small */
+@media only screen and (max-width: 780px){
+
+	img { display: none; }
+
+}
+
+i{
+	margin:0.3em;
+}
+
+hr{
+	border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+#copyright{
+	padding: 0;
+	margin: 0;
+}

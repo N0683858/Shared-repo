@@ -138,6 +138,9 @@ h1{
     #landingPage{
       padding-top: 40%;
     }
+    hr{
+      width: 350px;
+    }
   }
 
     @media only screen and (max-width: 490px){
@@ -169,37 +172,20 @@ h1{
           }
        }
 
-      @media only screen and (min-width: 428px){
-        #signup-btn{
-          display: none; /*keep the normall button hidden until the screen is 428px*/
-        }
-      }
-
-          @media only screen and (max-width: 420px){
-            .navbar .navbar-brand{
-              font-size: 1.5em;
-            }
-
-            #logo{
-              width: 40px;
-              height: 40px;
-            }
-
-            .navbar-toggler-icon{
-              width: 1em;
-              height: 1em;
+          @media only screen and (min-width: 429px){
+            #signup-btn{
+              display: none; /*keep the normall button hidden until the screen is 428px*/
             }
           }
 
-
-            @media only screen and (max-width: 330px){
+            @media only screen and (max-width: 420px){
               .navbar .navbar-brand{
-                font-size: 1em;
+                font-size: 1.5em;
               }
 
               #logo{
-                width: 25px;
-                height: 25px;
+                width: 40px;
+                height: 40px;
               }
 
               .navbar-toggler-icon{
@@ -207,22 +193,46 @@ h1{
                 height: 1em;
               }
 
-
-              h1{
-                font-size: 2.5em;
-              }
-
-              h3{
-                font-size: 1em;
-              }
-
-              #signup-btn{
-                display: none;
+              hr{
+                width: 280px;
               }
             }
 
-            @media only screen and (min-width: 330px){
-              #signup-btn-sm{
-                display: none;
+
+              @media only screen and (max-width: 330px){
+                .navbar .navbar-brand{
+                  font-size: 1em;
+                }
+
+                #logo{
+                  width: 25px;
+                  height: 25px;
+                }
+
+                .navbar-toggler-icon{
+                  width: 1em;
+                  height: 1em;
+                }
+
+                h1{
+                  font-size: 2.5em;
+                }
+
+                h3{
+                  font-size: 1em;
+                }
+
+                #signup-btn{
+                  display: none;
+                }
+
+                hr{
+                  width: 240px;
+                }
               }
-            }
+
+                @media only screen and (min-width: 331px){
+                  #signup-btn-sm{
+                    display: none;
+                  }
+                }
